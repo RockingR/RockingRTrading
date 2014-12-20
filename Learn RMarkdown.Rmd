@@ -1,0 +1,32 @@
+---
+title: "Learn RMarkdown"
+author: "RockingR"
+date: "Dec 20 2014"
+output: html_document
+---
+
+### How to start a RMarkdown file
+> 1. click **+** icon to create a new R Markdown file
+>     + choose HTML or template HTML (this is simpler)
+> 2. click **down_arrow** next to **Knit** icon to select output style:
+>     + HTML
+>     + PDF (require some package or softward downloading)
+>     + MS world
+
+### Learning Materials
+* learning material on <http://rmarkdown.rstudio.com>.
+
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
